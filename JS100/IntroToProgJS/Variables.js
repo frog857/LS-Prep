@@ -36,3 +36,24 @@ to that label.
  */
 
  // #5
+
+ /* 
+ This program should log bar to the console. We declared foo with the let
+ keyword, and the value of 'bar' in the global scope. We then declare in 
+ a block scope foo with the let keyword, and a different value, qux. However,
+ since we console log the expression foo in the global scope, we expect
+ to see the value bar.
+ */
+
+// # 6
+
+/* 
+I'm thinking this program won't produce an error. If I remember correctly, 
+const still has block scope. Only a var declaration has global scope. Despite 
+the reassignation of the same FOO using const, these variables are not able to 
+interacti with eachother due to scope difference.
+*/
+
+// #7
+
+
