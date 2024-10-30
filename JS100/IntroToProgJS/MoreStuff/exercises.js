@@ -82,3 +82,40 @@ console.log(allMatches(words, /lab/)); // => ['laboratory', 'flab', 'elaborate']
  * need return to pass that variable boolean back to filter..........!!!!!
  */
 
+// #7
+
+/**
+ * Exception handling is JavaScripts way of handling potential errors in
+ * a runtime environment. Try and Catch are to keywords you can use to write
+ * functionality to handle errors and continue executing. 
+ */
+
+ // #8
+
+ function isNotANumber(value) {
+  // check if value is: obj
+  // check if value is a non number primitive: string, boolean, bigInt, undefined, null, symbol
+
+ }
+
+ /**
+  * EDIT: the 'unique' property of NaN is that it does not equal itself
+  */
+
+ // #9
+
+ function isNegativeZero(value) {
+  return (1 / value === -Infinity)
+ }
+
+ console.log(isNegativeZero(0))  // false
+ console.log(isNegativeZero(4))  // false
+ console.log(isNegativeZero(-0)) // true
+
+ // #10
+
+ /**
+  * I guessed that it would return 6 as I thought it would be coerced. I was correct that
+  * it was coerced, but failed to note the post-increment aspect of the operator. Thus,
+  * the expression would evaluate to 6, but it returns 5... 
+  */
